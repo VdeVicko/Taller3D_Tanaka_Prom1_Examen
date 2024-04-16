@@ -13,7 +13,11 @@ namespace Taller3d_Examen_Prom1
 
         }
 
-
+        protected virtual void PrintStats()
+        {
+            Console.WriteLine("Name of the weapon: " + name);
+            Console.WriteLine("Costo del arma: " + coast);
+        }
 
     }
 }
