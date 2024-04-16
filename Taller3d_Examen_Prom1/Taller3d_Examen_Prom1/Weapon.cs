@@ -11,5 +11,12 @@ namespace Taller3d_Examen_Prom1
         {
 
         }
+
+
+        public override void PrintStats()
+        {
+            base.PrintStats();
+            Console.WriteLine("El daño del arma es: " + dmg);
+        }
     }
 }
