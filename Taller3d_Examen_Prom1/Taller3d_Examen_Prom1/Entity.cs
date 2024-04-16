@@ -10,6 +10,12 @@ namespace Taller3d_Examen_Prom1
 
         protected string name { get; set; }
 
+        public Entity(string name, float life)
+        {
+            this.life = life;
+            this.name = name;
+        }
+
     }
 
 }
