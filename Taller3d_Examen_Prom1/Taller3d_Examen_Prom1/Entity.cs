@@ -6,7 +6,7 @@ namespace Taller3d_Examen_Prom1
 {
     class Entity
     {
-        protected List<Item> inventory = new List<Item>();
+        public List<Item> inventory = new List<Item>();
         protected float life { get; set; }
 
         protected string name { get; set; }
