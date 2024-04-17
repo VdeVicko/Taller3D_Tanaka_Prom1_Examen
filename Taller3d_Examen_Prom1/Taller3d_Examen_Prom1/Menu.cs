@@ -7,11 +7,17 @@ namespace Taller3d_Examen_Prom1
     class Menu
     {
         EventsManager events = new EventsManager();
+        bool Continueflag = true;
          public void Execute()
         {
-            Console.WriteLine("Welcome player, what do you wanna do?");
-            DisplayOptions();
-            ExecuteOptions();
+            Console.WriteLine("Welcome player");
+            do
+            {
+                Console.WriteLine("What do you wanna do?");
+                DisplayOptions();
+                ExecuteOptions();
+
+            } while (Continueflag);
         }
 
 
@@ -60,6 +66,7 @@ namespace Taller3d_Examen_Prom1
                     events.AddItem(events.playableCharacters[0]);
                     break;
                 case 9:
+                    Continueflag = false;
                     break;
             }
         }

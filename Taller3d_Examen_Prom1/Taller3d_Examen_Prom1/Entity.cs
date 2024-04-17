@@ -42,7 +42,7 @@ namespace Taller3d_Examen_Prom1
         {
             foreach(Item item in inventory)
             {
-                Console.WriteLine(item.Name);
+                Console.WriteLine(item.name);
             }
         }
 

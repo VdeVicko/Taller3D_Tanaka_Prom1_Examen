@@ -6,7 +6,10 @@ namespace Taller3d_Examen_Prom1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Exam, i gonna kill myself if this dont work!");
+            Console.WriteLine("Hey there");
+            Menu menu = new Menu();
+
+            menu.Execute();
         }
     }
 }

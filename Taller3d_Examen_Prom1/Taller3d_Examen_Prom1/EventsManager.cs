@@ -12,13 +12,21 @@ namespace Taller3d_Examen_Prom1
 
         public void CreatePlayer()
         {
-            int points = 10;
+            int points = 100;
             Player player = new Player("null",0,0,0,0);
             Console.WriteLine("Your character has 3 stats,they help you to succes the events, you can add points to your stats");
             do
             {
-                player.AddPoints(points);
+                int usePoint;
+                do
+                {
+                    Console.WriteLine("How many poitns do you want to use?, select a number less or equal your points");
+                    usePoint = int.Parse(Console.ReadLine());
 
+                } while (usePoint > points);
+                player.AddPoints(usePoint);
+                points -= usePoint;
+                
             }while (points >= 0);
 
             Console.WriteLine("Whats the name of the character");
