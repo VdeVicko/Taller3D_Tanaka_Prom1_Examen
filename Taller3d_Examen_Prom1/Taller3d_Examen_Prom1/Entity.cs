@@ -34,6 +34,11 @@ namespace Taller3d_Examen_Prom1
             }
         }
 
+        public void AddItem(Item item)
+        {
+            inventory.Add(item);
+        }
+
         public void ListData()
         {
             Console.WriteLine("Name: " + name);
