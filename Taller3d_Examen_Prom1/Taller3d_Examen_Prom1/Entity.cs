@@ -26,6 +26,23 @@ namespace Taller3d_Examen_Prom1
             this.cha = cha;
         }
 
+        public void listItems()
+        {
+            foreach(Item item in inventory)
+            {
+                Console.WriteLine(item.Name);
+            }
+        }
+
+        public void ListData()
+        {
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Life: " + life);
+            Console.WriteLine("Strg: " + strg);
+            Console.WriteLine("Dex: " + dex);
+            Console.WriteLine("Cha: " + cha);
+        }
+
     }
 
 }
