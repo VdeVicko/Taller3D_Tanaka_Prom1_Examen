@@ -13,11 +13,10 @@ namespace Taller3d_Examen_Prom1
 
         }
 
-
-        public override void PrintStats()
+        protected virtual void PrintStats()
         {
-            base.PrintStats();
-            Console.WriteLine("")
+            Console.WriteLine("Name of the weapon: " + name);
+            Console.WriteLine("Costo del arma: " + coast);
         }
 
     }
