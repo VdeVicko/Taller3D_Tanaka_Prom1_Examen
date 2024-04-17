@@ -76,7 +76,7 @@ namespace Taller3d_Examen_Prom1
                     break;
             }
 
-            
+
         }
         public void DeleteItem()
         {
@@ -88,7 +88,7 @@ namespace Taller3d_Examen_Prom1
             listItems.RemoveAt(int.Parse(Console.ReadLine()));
         }
 
-       
+
 
     }
 }
