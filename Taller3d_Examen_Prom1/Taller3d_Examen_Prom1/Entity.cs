@@ -6,7 +6,7 @@ namespace Taller3d_Examen_Prom1
 {
     class Entity
     {
-        protected List<Item> inventory = new List<Item>();
+        public List<Item> inventory = new List<Item>();
         protected float life { get; set; }
 
         protected string name { get; set; }
@@ -24,6 +24,28 @@ namespace Taller3d_Examen_Prom1
             this.strg = strg;
             this.dex = dex;
             this.cha = cha;
+        }
+
+        public void listItems()
+        {
+            foreach(Item item in inventory)
+            {
+                Console.WriteLine(item.Name);
+            }
+        }
+
+        public void AddItem(Item item)
+        {
+            inventory.Add(item);
+        }
+
+        public void ListData()
+        {
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Life: " + life);
+            Console.WriteLine("Strg: " + strg);
+            Console.WriteLine("Dex: " + dex);
+            Console.WriteLine("Cha: " + cha);
         }
 
     }
