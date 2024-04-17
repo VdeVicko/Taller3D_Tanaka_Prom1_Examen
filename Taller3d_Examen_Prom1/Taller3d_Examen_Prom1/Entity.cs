@@ -11,6 +11,18 @@ namespace Taller3d_Examen_Prom1
 
         protected string name { get; set; }
 
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                value = name;
+            }
+        }
+
         protected int strg { get; set; }
 
         protected int dex { get; set; }
