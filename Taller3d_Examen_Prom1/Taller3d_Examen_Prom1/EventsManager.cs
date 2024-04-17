@@ -6,9 +6,9 @@ namespace Taller3d_Examen_Prom1
 {
     class EventsManager
     {
-        List<Player> playableCharacters = new List<Player>();
-        List<NpcFriendly> npcs = new List<NpcFriendly>();
-        List<Item> listItems = new List<Item>();
+        public List<Player> playableCharacters = new List<Player>();
+        public List<NpcFriendly> npcs = new List<NpcFriendly>();
+        public List<Item> listItems = new List<Item>();
 
         public void CreatePlayer()
         {
